@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial
+scale=1.0">
+    <title>Latest fashion news 2024</title>
+    <link rel="stylesheet" href="news_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="form.js"></script>
+
+</head>
+<body>
+
+<div id="authModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div id="welcomeSection">
+            <h1>Welcome! Have an account?
+                <button id="authButton">Log In</button>
+            </h1>
+            <h2>Create Account</h2>
+            <form id="registrationForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Log In</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+</div>
+
+
+<div id="mainContent" style="display: none;">
+    <button id="logoutButton">Logout</button>
+
+
+</div>
+
+
+<div id="adminPanel" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h1>Admin Panel</h1>
+        <table id="user-table">
+            <thead>
+            <tr>
+                <th>Username</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="user-list"></tbody>
+        </table>
+    </div>
+</div>
+
+
+<div id="navbar-container"></div>
+
+
+<header>
+    <h1>Latest fashion news</h1>
+
+</header>
+
+<main>
+    <blockquote>
+        I don’t do fashion. I am fashion.
+        Coco Chanel
+    </blockquote>
+
+    <section id="2000s fashion is back">
+        <h2>2000s fashion is back</h2>
+        <p>Trends we tried to erase from our memories are returning to the catwalks and to our wardrobes. Velour suits, skinny cardigans and low-waisted jeans. ..... Take a look back at the most impressive fashion trends of the 2000s. Vintage style is back!</p>
+
+        <figure>
+            <img src="https://i.pinimg.com/736x/24/87/c2/2487c2d405130fc4bf3c8d8de262365f.jpg" alt="2000s fashion is back" width="450" height="300">
+            <figcaption>2000s style looks.</figcaption>
+        </figure>
+
+
+    </section> <hr>
+
+
+    <section id="81st Venice International Film Festival: Celebrity Looks">
+        <h2>81st Venice International Film Festival: Celebrity Looks</h2>
+        <p>The 81st Venice International Film Festival took place on the Italian island of Lido from August 28 to September 7. </p>
+
+        <figure>
+            <img src="https://s.yimg.com/ny/api/res/1.2/B0zx4bjgc_8XC49hV7YrXA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03ODQ-/https://media.zenfs.com/en/people_218/3a72bf9bf7f3d4ba879df539b231dc95" alt="81st Venice International Film Festival: Celebrity Looks" width="500" height="400">
+            <figcaption>Celebrities</figcaption>
+
+        </figure>
+    </section><hr>
+
+    <section id="New collection of the H&M brand">
+        <h2>New collection of the H&M brand</h2>
+        <p>The next part of H&M Studio was inspired by the relaxed style codes of the 1970s, updated with a carefree, modern essence. “Spring/summer 2024 expresses a yearning for adventure,” says Linda Wickell, conceptual designer at H&M Studio. “We imagined a 1970s musician on the road, a creative soul who travels light, picking up pieces for his wardrobe along the way.”</p>
+
+        <figure>
+            <img src="https://i.ytimg.com/vi/vBRbvHgnmY8/maxresdefault.jpg" alt="New collection of the H&M brand" width="600px" height="300px">
+            <figcaption>Clothes from new collection.</figcaption>
+        </figure>
+    </section> <hr>
+
+    <dl>
+        <dt>Vintage</dt>
+        <dd>A stylized trend in fashion, especially in clothing and household items, that focuses on the revival of fashion trends of past generations and eras.</dd>
+
+        <dt>Venice International Film Festival</dt>
+        <dd>An annual film festival held in Venice, Italy. It is the world's oldest film festival and one of the "Big Five" international film festivals worldwide.</dd>
+    </dl><hr>
+
+
+    <section id="Feedback form" >
+
+        <h2>Feedback form</h2><br>
+        <form id="feedbackForm" action="/submit_form" method="post" class="form" onsubmit="data(); return false;">
+
+            <div class="input_form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" ><br><br>
+            </div>
+
+            <div class="input_form">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" ><br><br>
+            </div>
+
+            <div class="input_form">
+                <label for="phone">Phone number (optional):</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="8-777-777-7777"><br><br>
+
+            </div>
+
+            <div class="select_form">
+                <label for="topic">Topic of message:</label><br>
+                <select id="topic" name="topic">
+                    <option value="2000s fashion is back">2000s fashion is back</option>
+                    <option value="81st Venice International Film Festival: Celebrity Looks">81st Venice International Film Festival: Celebrity Looksr</option>
+                    <option value="New collection of the H&M brand">New collection of the H&M brand</option>
+                </select><br><br>
+            </div>
+
+            <div class="message_form">
+                <label for="message" > Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <div class="send_form">
+                <input type="submit" value="Send">
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+
+</footer>
+
+<script>
+    const styles = `
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #navbar {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        #navbar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        #nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        #nav-links li {
+            margin-right: 15px;
+        }
+        #nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        #nav-links a.hide {
+            display: none;
+        }
+        #nav-links a:hover {
+            color: #adb5bd;
+        }
+        #search-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        #search {
+            padding: 5px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        mark {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .bar {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+        @media (max-width: 768px) {
+            #nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                background-color: #343a40;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                padding: 10px 0;
+            }
+            #nav-links.show {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+    `;
+
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.appendChild(document.createTextNode(styles));
+    document.head.appendChild(styleSheet);
+
+    const navbar = document.createElement("div");
+    navbar.id = "navbar";
+
+    const title = document.createElement("h1");
+    title.textContent = "Fashion Fable";
+
+    const navLinks = document.createElement("ul");
+    navLinks.id = "nav-links";
+
+    const sections = ["2000s fashion is back", "81st Venice International Film Festival: Celebrity Looks", "New collection of the H&M brand",  "Feedback form"];
+    sections.forEach(section => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = `#${section}`;
+        a.textContent = section.replace("-", " ");
+        li.appendChild(a);
+        navLinks.appendChild(li);
+    });
+
+    const searchInput = document.createElement("input");
+    searchInput.id = "search";
+    searchInput.type = "text";
+    searchInput.placeholder = "Search...";
+
+    const hamburger = document.createElement("div");
+    hamburger.className = "hamburger";
+    hamburger.innerHTML = `
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    `;
+
+    navbar.appendChild(title);
+    navbar.appendChild(navLinks);
+    navbar.appendChild(searchInput);
+    navbar.appendChild(hamburger);
+
+    function highlight(text) {
+        const sections = document.querySelectorAll("section");
+        sections.forEach(section => {
+            section.innerHTML = section.innerHTML.replace(/<mark>(.*?)<\/mark>/g, "$1");
+
+            if (text) {
+                const regex = new RegExp(`(${text})`, "gi");
+                section.innerHTML = section.innerHTML.replace(regex, "<mark>$1</mark>");
+            }
+        });
+    }
+
+    searchInput.addEventListener("input", function () {
+        const query = searchInput.value.toLowerCase();
+        const links = document.querySelectorAll("#nav-links a");
+        let found = false;
+
+        links.forEach(link => {
+            if (link.textContent.toLowerCase().includes(query)) {
+                link.classList.remove("hide");
+            } else {
+                link.classList.add("hide");
+            }
+        });
+
+
+        const sections = document.querySelectorAll("section");
+        sections.forEach(section => {
+            if (section.textContent.toLowerCase().includes(query) && query) {
+                found = true;
+                section.scrollIntoView({ behavior: "smooth" });
+                highlight(query);
+            }
+        });
+
+        if (!found) highlight("");
+    });
+
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
+</script>
+
+<script>
+    function createFooter() {
+        const footer = document.createElement('footer');
+        footer.style.display = 'flex';
+        footer.style.justifyContent = 'space-between';
+        footer.style.padding = '20px';
+        footer.style.backgroundColor = '#343a40';
+        footer.style.color = 'white';
+        footer.style.borderTop = '1px solid #ddd';
+
+        const col1 = document.createElement('div');
+        col1.style.flex = '1';
+        col1.innerHTML = `
+                <h4>Fashion Fable</h4>
+                <p>This website is a blog about fashion. This page looks at the latest trends for this season.</p>
+                <p><strong>Authors:</strong> Arailym Mukazhan, Ayaulym Muratbekova, Guldana Samatova</p>
+            `;
+
+        const col2 = document.createElement('div');
+        col2.style.flex = '1';
+        col2.innerHTML = `
+                <h4>Location:</h4>
+                <p>Astana, ave. Mangilik El, С1</p>
+                <h4>Contact us:</h4>
+                <p><a href="mailto:arailym.mukazhanova2904@gmail.com" >arailym.mukazhanova2904@gmail.com</a></p>
+            `;
+
+        footer.appendChild(col1);
+        footer.appendChild(col2);
+        document.body.appendChild(footer);
+    }
+
+    createFooter();
+</script>
+
+</body>
+</html>

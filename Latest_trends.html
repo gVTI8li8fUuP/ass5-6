@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial
+scale=1.0">
+    <title>Latest trends of autumn 2024</title>
+    <link rel="stylesheet" href="trends.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="form.js"></script>
+
+
+</head>
+<body>
+
+
+<div id="authModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div id="welcomeSection">
+            <h1>Welcome! Have an account?
+                <button id="authButton">Log In</button>
+            </h1>
+            <h2>Create Account</h2>
+            <form id="registrationForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Log In</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+</div>
+
+<div id="mainContent" style="display: none;">
+    <button id="logoutButton">Logout</button>
+
+
+</div>
+
+
+<div id="adminPanel" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h1>Admin Panel</h1>
+        <table id="user-table">
+            <thead>
+            <tr>
+                <th>Username</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="user-list"></tbody>
+        </table>
+    </div>
+</div>
+
+
+<div id="navbar-container"></div>
+
+
+<header class="header-section">
+    <h1>Latest trends of autumn 2024</h1>
+
+</header>
+
+<main class="main">
+    <blockquote>
+        "Fashion is very important. It is life-enhancing and, like everything that gives pleasure, it is worth doing well.
+        Vivienne Westwood"
+    </blockquote>
+
+    <section id="Minimalism" class="Minimalism-section">
+        <h2>Minimalism</h2>
+        <p>Minimalism is a classic of the genre. And this style never goes out of trend in all seasons. If you have autumn images in the style of minimalism, then you can consider yourself stylish.</p>
+
+        <figure>
+            <img src="https://cs6.livemaster.ru/storage/67/94/d0af7af842e437a97a6ffbc8f3qi.jpg" alt="Minimalism" width="200" height="300" class="img_min">
+            <figcaption>Minimalist style look</figcaption>
+        </figure>
+    </section> <hr>
+
+
+    <section id="Burgundy color" class="Burgundy_color_section">
+        <h2>Burgundy color</h2>
+        <p>It will hardly surprise anyone that it was the burgundy color that took over all the catwalks at the fall-winter 2024 shows, especially since it appeared at Gucci and Bottega Veneta in the previous season. This shade will easily fit into any wardrobe: it combines with almost any color.</p>
+
+        <figure>
+            <img src="https://www.emodno.com/wp-content/uploads/2022/12/vivammm.jpeg" alt="Burgundy color" width="440" height="300">
+            <figcaption>Examples of looks with the color burgundy</figcaption>
+
+        </figure>
+    </section><hr>
+
+    <section id="Fringle" class="Fringle_section">
+        <h2>Fringle</h2>
+        <p>Fringe has been a trend for several seasons now. Designers use it in their collections on various items of clothing and accessories.</p>
+
+        <figure>
+            <img src="https://img.shopstyle-cdn.com/sim/ac/79/ac793bd26b67d0ba4c49c682833b1e24_best/the-on-the-fringe-jacket.jpg" alt="Fringle" width="200" height="400" class="img_fringle">
+            <figcaption>A fringed jacket that can be worn in early autumn</figcaption>
+        </figure>
+    </section> <hr>
+
+    <section id="Material suede" class="suede_section">
+        <h2>Material suede</h2>
+        <p>Suede is back in trend! For a long time, suede remained on the list of anti-trends. Things made from it were considered irrelevant, fashionistas preferred leather. However, not long ago this material returned to the catwalks, and then to the shelves of boutiques.</p>
+
+        <figure>
+            <img src="https://i.pinimg.com/originals/94/98/cb/9498cb8d712059cbd74b05f37be3d058.jpg" alt="Material suede" width="440" height="300">
+            <figcaption>Examples of looks with the material suede</figcaption>
+
+        </figure>
+    </section><hr>
+
+
+
+    <section id="Feedback form" >
+
+        <h2>Feedback form</h2><br>
+        <form id="feedbackForm" action="/submit_form" method="post" class="form" onsubmit="data(); return false; " >
+
+            <div class="input_form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" ><br><br>
+            </div>
+
+            <div class="input_form">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" ><br><br>
+            </div>
+
+            <div class="input_form">
+                <label for="phone">Phone number (optional):</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="8-777-777-7777"><br><br>
+
+            </div>
+
+            <div class="select_form">
+                <label for="topic">Topic of message:</label><br>
+                <select id="topic" name="topic">
+                    <option value="Minimalism">Minimalism</option>
+                    <option value="Burgundy color">Burgundy color</option>
+                    <option value="Fringle">Fringle</option>
+                    <option value="Material suede">Material suede</option>
+                </select><br><br>
+            </div>
+
+            <div class="message_form">
+                <label for="message" > Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <div class="send_form">
+                <input type="submit" value="Send">
+            </div>
+
+        </form>
+
+
+    </section>
+
+</main>
+
+<footer class="footer_section">
+
+</footer>
+
+<script>
+    const styles = `
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #navbar {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        #navbar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        #nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        #nav-links li {
+            margin-right: 15px;
+        }
+        #nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        #nav-links a.hide {
+            display: none;
+        }
+        #nav-links a:hover {
+            color: #adb5bd;
+        }
+        #search-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        #search {
+            padding: 5px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        mark {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .bar {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+        @media (max-width: 768px) {
+            #nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                background-color: #343a40;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                padding: 10px 0;
+            }
+            #nav-links.show {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+    `;
+
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.appendChild(document.createTextNode(styles));
+    document.head.appendChild(styleSheet);
+
+    const navbar = document.createElement("div");
+    navbar.id = "navbar";
+
+    const title = document.createElement("h1");
+    title.textContent = "Fashion Fable";
+
+    const navLinks = document.createElement("ul");
+    navLinks.id = "nav-links";
+
+    const sections = ["Minimalism", "Burgundy color", "Fringle", "Material suede", "Feedback form"];
+    sections.forEach(section => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = `#${section}`;
+        a.textContent = section.replace("-", " ");
+        li.appendChild(a);
+        navLinks.appendChild(li);
+    });
+
+    const searchInput = document.createElement("input");
+    searchInput.id = "search";
+    searchInput.type = "text";
+    searchInput.placeholder = "Search...";
+
+    const hamburger = document.createElement("div");
+    hamburger.className = "hamburger";
+    hamburger.innerHTML = `
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    `;
+
+    navbar.appendChild(title);
+    navbar.appendChild(navLinks);
+    navbar.appendChild(searchInput);
+    navbar.appendChild(hamburger);
+    document.getElementById("navbar-container").appendChild(navbar);
+
+    function highlight(text) {
+        const sections = document.querySelectorAll("section");
+        sections.forEach(section => {
+            section.innerHTML = section.innerHTML.replace(/<mark>(.*?)<\/mark>/g, "$1"); // Убираем предыдущее выделение
+
+            if (text) {
+                const regex = new RegExp(`(${text})`, "gi");
+                section.innerHTML = section.innerHTML.replace(regex, "<mark>$1</mark>");
+            }
+        });
+    }
+
+    searchInput.addEventListener("input", function () {
+        const query = searchInput.value.toLowerCase();
+        const links = document.querySelectorAll("#nav-links a");
+        let found = false;
+
+        links.forEach(link => {
+            if (link.textContent.toLowerCase().includes(query)) {
+                link.classList.remove("hide");
+            } else {
+                link.classList.add("hide");
+            }
+        });
+
+        const sections = document.querySelectorAll("section");
+        sections.forEach(section => {
+            if (section.textContent.toLowerCase().includes(query) && query) {
+                found = true;
+                section.scrollIntoView({ behavior: "smooth" });
+                highlight(query);
+            }
+        });
+
+        if (!found) highlight("");
+    });
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
+</script>
+
+<script>
+    function createFooter() {
+        const footer = document.createElement('footer');
+        footer.style.display = 'flex';
+        footer.style.justifyContent = 'space-between';
+        footer.style.padding = '20px';
+        footer.style.backgroundColor = '#343a40';
+        footer.style.color = 'white';
+        footer.style.borderTop = '1px solid #ddd';
+
+        const col1 = document.createElement('div');
+        col1.style.flex = '1';
+        col1.innerHTML = `
+                <h4>Fashion Fable</h4>
+                <p>This website is a blog about fashion. This page looks at the latest trends for this season.</p>
+                <p><strong>Authors:</strong> Arailym Mukazhan, Ayaulym Muratbekova, Guldana Samatova</p>
+            `;
+
+        const col2 = document.createElement('div');
+        col2.style.flex = '1';
+        col2.innerHTML = `
+                <h4>Location:</h4>
+                <p>Astana, ave. Mangilik El, С1</p>
+                <h4>Contact us:</h4>
+                <p><a href="mailto:arailym.mukazhanova2904@gmail.com" >arailym.mukazhanova2904@gmail.com</a></p>
+            `;
+
+        footer.appendChild(col1);
+        footer.appendChild(col2);
+        document.body.appendChild(footer);
+    }
+
+    createFooter();
+</script>
+
+</body>
+</html>
